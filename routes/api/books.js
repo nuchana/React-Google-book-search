@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const bookController = require("../../controllers/bookController");
+const googleController = require("../../controllers/googleController");
 
 // Matches with "/api/books"
 router.route("/")
@@ -9,7 +10,7 @@ router.route("/")
 // Matches with "/api/books/:id"
 router
   .route("/:id")
-  .get(bookController.findOne)
+  .get(bookController.findById)
   .put(bookController.update)
   .delete(bookController.remove);
 
