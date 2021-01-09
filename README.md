@@ -49,5 +49,7 @@ To Visit App:
 
 ### Deployment
 
-View the deployed application at: <b><a href="https://search-google-books-api.herokuapp.com/" target="_blank">https://search-google-books-api.herokuapp.com/</a></b>
+* View the deployed application at: <b><a href="https://hidden-plateau-66369.herokuapp.com/" target="_blank">https://hidden-plateau-66369.herokuapp.com/</a></b>
+
+* Update this app on my portfolio react app at: <b><a href="https://nuchana.github.io/Nuchana-react-portfolio/" target="_blank">https://nuchana.github.io/Nuchana-react-portfolio/</a></b>
 
