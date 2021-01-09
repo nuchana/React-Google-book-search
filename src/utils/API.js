@@ -1,23 +1,27 @@
+/* eslint-disable import/no-anonymous-default-export */
+// Required module
 import axios from "axios";
-const BaseUrl = "https://www.googleapis.com/books/v1/volumes?q="
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  // calls googlbooks api and retrieve books based on user input
-  searchBooks: function (query) {
-    return axios.get(BaseUrl + query);
+  // Retrieves Google books
+  googleBooks: function (query) {
+    return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}`)
   },
-  // Gets all saved books in db
-  getSavedBooks: function () {
-    return axios.get("/api/books");
-  },
-  // Deletes the saved book with the given id
-  deleteBook: function (id) {
-    return axios.delete("/api/books/" + id);
-  },
-  // Saves an book to the database
+  // Saves book to the DB
   saveBook: function (bookData) {
     return axios.post("/api/books", bookData);
+  },
+  // Gets saved books from DB
+  getBooks: function () {
+    return axios.get("/api/books");
+  },
+  // Gets book with the given ID
+  getBook: function (id) {
+    return axios.get("/api/books/" + id);
+  },
+  // Deletes book with the given ID
+  deleteBook: function (id) {
+    return axios.delete("/api/books/" + id);
   }
 };
 

@@ -68,7 +68,7 @@ class Home extends Component {
                             value={this.state.search}
                             onChange={this.handleInputChange}
                             name="search"
-                            placeholder="Search for a book"
+                            placeholder="Input book name"
                         />
                         <SubmitBtn onClick={this.handleFormSubmit} />
                     </form>
