@@ -24,7 +24,7 @@ An application created using the MERN stack and allows users to search for books
 
 #### Homepage with search and saved funtions:   
 
-![Google Books Search](./public/homepage.PNG)
+![Google Books Search](client/public/homepage.PNG)
 
 ---
 
